@@ -1,13 +1,11 @@
 import Image from 'next/image';
 import Slide from '@/components/detail/components/Slider';
-import LogoGray from '@/images/LogoGray.svg';
 import YoutubeIcon from '@/icons/youtubeIcon.svg';
 import XIcon from '@/icons/x(sns)Icon.svg';
+import LogoGray from '@/icons/LogoGray.svg';
 import TiktokIcon from '@/icons/tiktokIcon.svg';
 import InstarIcon from '@/icons/instagramIcon.svg';
-import MovingLogo from '@/images/moving-large.png';
 import Recent from '@/components/render/Recent';
-import check from '@/images/check.png';
 import { useRouter } from 'next/router';
 
 export default function Home() {

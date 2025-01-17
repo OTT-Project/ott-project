@@ -76,11 +76,13 @@ export default function genre() {
             {data?.pages.map((page) =>
               page?.results.map((poster) => (
                 <li key={poster.id}>
-                  <div className="h-[230px] w-[22vw] truncate md:h-[23vw] md:w-[11vw] xl:h-[18vw] xl:w-[7.9vw]"
+                  <div
+                    className="h-[230px] w-[22vw] truncate md:h-[23vw] md:w-[11vw] xl:h-[18vw] xl:w-[7.9vw]"
                     onClick={() => {
                       handleModalOpen(poster.id);
-                    }}>
-                    <div className="relative mb-4 ">
+                    }}
+                  >
+                    <div className="relative mb-4 cursor-pointer">
                       <Image
                         src={`${BASE_IMAGE_URL}${poster.poster_path}`}
                         width={121.34}
